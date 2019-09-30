@@ -9,9 +9,6 @@ app = Flask(__name__)
 bot = ChatBot("Candice")
 trainer = ChatterBotCorpusTrainer(bot)
 trainer.train("chatterbot.corpus.spanish")
-# bot.set_trainer(ListTrainer)
-# bot.set_trainer(ChatterBotCorpusTrainer)
-# bot.train("chatterbot.corpus.english")
 
 @app.route("/")
 def home():    
